@@ -3,7 +3,7 @@
   "displayName": "koala",
   "description": "A troll language based on Python Interpreter.",
   "version": "0.0.1",
-  "publisher": "krushna06",
+  "publisher": "KrushnaVyas",
   "engines": {
     "vscode": "^1.96.0"
   },
