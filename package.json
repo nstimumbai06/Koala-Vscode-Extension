@@ -2,7 +2,7 @@
   "name": "koala-lang",
   "displayName": "koala-lang",
   "description": "A troll language based on Python Interpreter.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "KrushnaVyas",
   "engines": {
     "vscode": "^1.96.0"
@@ -14,14 +14,14 @@
   "languages": [
     {
       "id": "koala-lang",
-      "aliases": ["Koala", "koala"],
+      "aliases": ["Koala", "koala", "koala-lang", "Koala-lang"],
       "extensions": [".koala"],
       "configuration": "./language-configuration.json"
     }
   ],
   "grammars": [
     {
-      "language": "koala",
+      "language": "koala-lang",
       "scopeName": "source.koala",
       "path": "./syntaxes/koala.tmLanguage.json"
     }
