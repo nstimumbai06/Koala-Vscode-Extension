@@ -9,17 +9,21 @@
   "categories": [
     "Programming Languages"
   ],
-  "contributes": {
-    "languages": [{
+"contributes": {
+  "languages": [
+    {
       "id": "koala",
-      "aliases": ["koala", "koala"],
+      "aliases": ["Koala", "koala"],
       "extensions": [".koala"],
       "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
+    }
+  ],
+  "grammars": [
+    {
       "language": "koala",
-      "scopeName": "index.koala",
+      "scopeName": "source.koala",
       "path": "./syntaxes/koala.tmLanguage.json"
-    }]
-  }
+    }
+  ]
+}
 }
