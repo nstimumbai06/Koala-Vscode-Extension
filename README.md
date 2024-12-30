@@ -26,22 +26,12 @@ This extension does not currently contribute specific settings to VS Code.
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
+### 0.0.1
 
 Initial release with syntax highlighting for Koala language. This includes:
 - Basic control flow keywords (`thoda_idhar_aye`).
 - Support for double-quoted strings with escape sequences.
 - The `log` function keyword highlighting.
-
-### 1.0.1
-
-Fixed issue with double-quoted string highlighting to support escape characters properly.
-
-### 1.1.0
-
-- Added better handling for `log` function keywords.
-- Optimized string matching for more accurate highlighting.
-
 ---
 
 ## Working with Markdown
