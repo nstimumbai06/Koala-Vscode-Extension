@@ -1,8 +1,8 @@
 {
   "name": "koala-lang",
   "displayName": "koala-lang",
-  "description": "A troll language based on Python Interpreter.",
-  "version": "0.0.2",
+  "description": "A troll language based on C Python Interpreter.",
+  "version": "0.0.3",
   "publisher": "KrushnaVyas",
   "engines": {
     "vscode": "^1.96.0"

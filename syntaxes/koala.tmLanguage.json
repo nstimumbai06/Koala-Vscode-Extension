@@ -1,57 +1,83 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "koala",
+	"name": "Koala",
 	"scopeName": "source.koala",
 	"patterns": [
 	  {
-		"name": "keyword.control.koala",
-		"match": "\\b(if|while|for|return)\\b"
+		"include": "#comments"
 	  },
 	  {
-		"name": "keyword.control.koala",
-		"match": "\\bthoda_idhar_aye\\b"
+		"include": "#keywords"
 	  },
 	  {
-		"name": "keyword.function.log.koala",
-		"match": "\\b(log)\\b"
+		"include": "#functions"
 	  },
 	  {
-		"name": "string.quoted.double.koala",
-		"begin": "\"",
-		"end": "\"",
-		"patterns": [
-		  {
-			"name": "constant.character.escape.koala",
-			"match": "\\\\."
-		  }
-		]
+		"include": "#strings"
 	  },
 	  {
-		"name": "string.quoted.double.koala",
-		"match": "\".*?\""
+		"include": "#operators"
+	  },
+	  {
+		"include": "#variables"
+	  },
+	  {
+		"include": "#errors"
 	  }
 	],
 	"repository": {
+	  "comments": {
+		"name": "comment.line.double-slash.koala",
+		"match": "//.*"
+	  },
 	  "keywords": {
 		"patterns": [
 		  {
 			"name": "keyword.control.koala",
-			"match": "\\b(if|while|for|return)\\b"
+			"match": "\\b(if|while|for|return|reason_mat_do|throw)\\b"
 		  },
 		  {
-			"name": "keyword.control.koala",
+			"name": "keyword.other.koala",
 			"match": "\\bthoda_idhar_aye\\b"
 		  }
 		]
 	  },
-	  "strings": {
-		"name": "string.quoted.double.koala",
-		"begin": "\"",
-		"end": "\"",
+	  "functions": {
 		"patterns": [
 		  {
-			"name": "constant.character.escape.koala",
-			"match": "\\\\."
+			"name": "entity.name.function.koala",
+			"match": "\\b(log|ek_kaam_kro)\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"patterns": [
+		  {
+			"name": "string.quoted.double.koala",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.koala",
+				"match": "\\\\."
+			  }
+			]
+		  }
+		]
+	  },
+	  "operators": {
+		"name": "keyword.operator.koala",
+		"match": "(\\+|\\-|\\*|\\/|=)"
+	  },
+	  "variables": {
+		"name": "variable.other.koala",
+		"match": "\\b\\w+\\b"
+	  },
+	  "errors": {
+		"patterns": [
+		  {
+			"name": "support.type.exception.koala",
+			"match": "\\b(zerodivisionerror|ioerror|attributeerror|datatypeerror|importerror|typeerror)\\b"
 		  }
 		]
 	  }
