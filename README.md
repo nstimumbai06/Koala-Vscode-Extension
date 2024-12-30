@@ -1,35 +1,26 @@
-# koala README
+# Koala
 
-This is the README for your extension "koala". After writing up a brief description, we recommend including the following sections.
+A troll language that was made by Krushna Vyas based on the Python C interpreter.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Syntax Highlighting**: The extension highlights control keywords such as `if`, `while`, `for`, `return`, and the custom keyword `thoda_idhar_aye`.
+- **String Support**: Highlights strings in double quotes with support for escape characters.
+- **Log Function**: Recognizes `log` as a function keyword for specific highlighting.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> Tip: To see your changes in action, test the extension with sample Koala code that includes the supported keywords and strings!
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+There are no specific dependencies for this extension. It works with VS Code installations supporting Language Extensions.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension does not currently contribute specific settings to VS Code.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- No known issues at the moment.
 
 ## Release Notes
 
@@ -37,15 +28,19 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release with syntax highlighting for Koala language. This includes:
+- Basic control flow keywords (`thoda_idhar_aye`).
+- Support for double-quoted strings with escape sequences.
+- The `log` function keyword highlighting.
 
 ### 1.0.1
 
-Fixed issue #.
+Fixed issue with double-quoted string highlighting to support escape characters properly.
 
 ### 1.1.0
 
-Added features X, Y, and Z.
+- Added better handling for `log` function keywords.
+- Optimized string matching for more accurate highlighting.
 
 ---
 
