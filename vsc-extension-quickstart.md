@@ -1,29 +1,42 @@
-# Welcome to your VS Code Extension
+# Koala
 
-## What's in the folder
+A troll language that was made by Krushna Vyas based on the Python C interpreter.
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your language support and define the location of the grammar file that has been copied into your extension.
-* `syntaxes/koala.tmLanguage.json` - this is the Text mate grammar file that is used for tokenization.
-* `language-configuration.json` - this is the language configuration, defining the tokens that are used for comments and brackets.
+## Features
 
-## Get up and running straight away
+- **Syntax Highlighting**: The extension highlights control keywords such as `thoda_idhar_aye`.
+- **String Support**: Highlights strings in double quotes with support for escape characters.
+- **Log Function**: Recognizes `log` as a function keyword for specific highlighting.
 
-* Make sure the language configuration settings in `language-configuration.json` are accurate.
-* Press `F5` to open a new window with your extension loaded.
-* Create a new file with a file name suffix matching your language.
-* Verify that syntax highlighting works and that the language configuration settings are working.
+> Tip: To see your changes in action, test the extension with sample Koala code that includes the supported keywords and strings!
 
-## Make changes
+## Requirements
 
-* You can relaunch the extension from the debug toolbar after making changes to the files listed above.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+There are no specific dependencies for this extension. It works with VS Code installations supporting Language Extensions.
 
-## Add more language features
+## Extension Settings
 
-* To add features such as IntelliSense, hovers and validators check out the VS Code extenders documentation at https://code.visualstudio.com/docs
+This extension does not currently contribute specific settings to VS Code.
 
-## Install your extension
+## Known Issues
 
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+- No known issues at the moment.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 0.0.1
+
+Initial release with syntax highlighting for Koala language. This includes:
+- Basic control flow keywords (`thoda_idhar_aye`).
+- Support for double-quoted strings with escape sequences.
+- The `log` function keyword highlighting.
+---
+
+## For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
