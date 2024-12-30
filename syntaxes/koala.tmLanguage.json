@@ -1,32 +1,62 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "koala",
+	"scopeName": "source.koala",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+	  {
+		"name": "keyword.control.koala",
+		"match": "\\b(if|while|for|return)\\b"
+	  },
+	  {
+		"name": "keyword.control.koala",
+		"match": "\\bthoda_idhar_aye\\b"
+	  },
+	  {
+		"name": "keyword.function.log.koala",
+		"match": "\\b(log)\\b"
+	  },
+	  {
+		"name": "string.quoted.double.koala",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.koala",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  {
+		"name": "string.quoted.double.koala",
+		"match": "\".*?\""
+	  }
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.koala",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.koala",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.koala",
-					"match": "\\\\."
-				}
-			]
-		}
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.koala",
+			"match": "\\b(if|while|for|return)\\b"
+		  },
+		  {
+			"name": "keyword.control.koala",
+			"match": "\\bthoda_idhar_aye\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"name": "string.quoted.double.koala",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.koala",
+			"match": "\\\\."
+		  }
+		]
+	  }
 	},
-	"scopeName": "index.koala"
-}
+	"fileTypes": ["koala"],
+	"uuid": "01234567-89ab-cdef-0123-456789abcdef"
+  }
+  
