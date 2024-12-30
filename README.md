@@ -4,7 +4,7 @@ A troll language that was made by Krushna Vyas based on the Python C interpreter
 
 ## Features
 
-- **Syntax Highlighting**: The extension highlights control keywords such as `if`, `while`, `for`, `return`, and the custom keyword `thoda_idhar_aye`.
+- **Syntax Highlighting**: The extension highlights control keywords such as `thoda_idhar_aye`.
 - **String Support**: Highlights strings in double quotes with support for escape characters.
 - **Log Function**: Recognizes `log` as a function keyword for specific highlighting.
 
