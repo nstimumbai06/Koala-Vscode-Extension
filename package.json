@@ -1,6 +1,6 @@
 {
-  "name": "koala",
-  "displayName": "koala",
+  "name": "koala-lang",
+  "displayName": "koala-lang",
   "description": "A troll language based on Python Interpreter.",
   "version": "0.0.1",
   "publisher": "KrushnaVyas",
@@ -13,7 +13,7 @@
 "contributes": {
   "languages": [
     {
-      "id": "koala",
+      "id": "koala-lang",
       "aliases": ["Koala", "koala"],
       "extensions": [".koala"],
       "configuration": "./language-configuration.json"
