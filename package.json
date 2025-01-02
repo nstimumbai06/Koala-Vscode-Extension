@@ -4,6 +4,7 @@
   "description": "A troll language based on C Python Interpreter.",
   "version": "0.0.3",
   "publisher": "KrushnaVyas",
+  "repository": "https://github.com/nstimumbai06/Koala-Interpreter",
   "engines": {
     "vscode": "^1.96.0"
   },
