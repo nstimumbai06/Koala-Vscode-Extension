@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vscode/main/src/vs/platform/theme/common/iconThemeSchema.json",
+    "iconDefinitions": {
+      "koala-icon": {
+        "iconPath": "./icons/koala-icon.png"
+      }
+    },
+    "file": "koala-icon",
+    "fileExtensions": {
+      "koala": "koala-icon"
+    },
+    "folder": "_folder",
+    "folderExpanded": "_folder_expanded",
+    "rootFolder": "_root_folder",
+    "rootFolderExpanded": "_root_folder_expanded"
+  }
+  
