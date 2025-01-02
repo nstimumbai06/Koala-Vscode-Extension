@@ -12,27 +12,27 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "koala-lang",
-        "aliases": ["Koala", "koala", "koala-lang", "Koala-lang"],
-        "extensions": [".koala"],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "koala-lang",
-        "scopeName": "source.koala",
-        "path": "./syntaxes/koala.tmLanguage.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "koala-icons",
-        "label": "Koala File Icons",
-        "path": "./icon-theme.json"
-      }
-    ]
-  }
+  "languages": [
+    {
+      "id": "koala-lang",
+      "aliases": ["Koala", "koala", "koala-lang", "Koala-lang"],
+      "extensions": [".koala"],
+      "configuration": "./language-configuration.json"
+    }
+  ],
+  "grammars": [
+    {
+      "language": "koala-lang",
+      "scopeName": "source.koala",
+      "path": "./syntaxes/koala.tmLanguage.json"
+    }
+  ],
+  "iconThemes": [
+    {
+      "id": "koala-icons",
+      "label": "Koala File Icons",
+      "path": "./icon-theme.json"
+    }
+  ]
+}
 }
