@@ -3,27 +3,13 @@
 	"name": "Koala",
 	"scopeName": "source.koala",
 	"patterns": [
-	  {
-		"include": "#comments"
-	  },
-	  {
-		"include": "#keywords"
-	  },
-	  {
-		"include": "#functions"
-	  },
-	  {
-		"include": "#strings"
-	  },
-	  {
-		"include": "#operators"
-	  },
-	  {
-		"include": "#variables"
-	  },
-	  {
-		"include": "#errors"
-	  }
+	  { "include": "#comments" },
+	  { "include": "#keywords" },
+	  { "include": "#functions" },
+	  { "include": "#strings" },
+	  { "include": "#operators" },
+	  { "include": "#variables" },
+	  { "include": "#errors" }
 	],
 	"repository": {
 	  "comments": {
@@ -34,11 +20,11 @@
 		"patterns": [
 		  {
 			"name": "keyword.control.koala",
-			"match": "\\b(if|while|for|return|reason_mat_do|throw)\\b"
+			"match": "\\b(if|else|while|for|return|throw|try|catch|finally)\\b"
 		  },
 		  {
 			"name": "keyword.other.koala",
-			"match": "\\bthoda_idhar_aye\\b"
+			"match": "\\b(let|const|var|function)\\b"
 		  }
 		]
 	  },
@@ -46,7 +32,7 @@
 		"patterns": [
 		  {
 			"name": "entity.name.function.koala",
-			"match": "\\b(log|ek_kaam_kro)\\b"
+			"match": "\\b(console\\.log|log|ek_kaam_kro)\\b"
 		  }
 		]
 	  },
@@ -59,7 +45,18 @@
 			"patterns": [
 			  {
 				"name": "constant.character.escape.koala",
-				"match": "\\\\."
+				"match": "\\\\[\"'\\\\nrt]"
+			  }
+			]
+		  },
+		  {
+			"name": "string.quoted.single.koala",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.koala",
+				"match": "\\\\[\"'\\\\nrt]"
 			  }
 			]
 		  }
@@ -67,17 +64,17 @@
 	  },
 	  "operators": {
 		"name": "keyword.operator.koala",
-		"match": "(\\+|\\-|\\*|\\/|=)"
+		"match": "(\\+|\\-|\\*|\\/|=|==|!=|<=|>=|<|>)"
 	  },
 	  "variables": {
 		"name": "variable.other.koala",
-		"match": "\\b\\w+\\b"
+		"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
 	  },
 	  "errors": {
 		"patterns": [
 		  {
 			"name": "support.type.exception.koala",
-			"match": "\\b(zerodivisionerror|ioerror|attributeerror|datatypeerror|importerror|typeerror)\\b"
+			"match": "\\b(ZeroDivisionError|IOError|AttributeError|DataTypeError|ImportError|TypeError|ReferenceError|SyntaxError)\\b"
 		  }
 		]
 	  }
